@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: 'Google Sans Code', monospace;
+  font-weight: 300;
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+  color: #f0f0f0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: #111;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header-title {
+  flex: 1;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.logo {
+  max-width: 80px;
+  height: auto;
+}
+
+.logo-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: #222;
+  font-size: 0.9rem;
+}
+
+.navbar a {
+  color: #0ff;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #f0f;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 700px;
+  background-color: #1f1f1f;
+  border: 2px solid #444;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #0ff2;
+  text-align: center;
+}
+
+.card h2, .card h1 {
+  color: #0ff;
+}
+
+.card p {
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0ff;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #0cf;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-card input,
+.form-card textarea,
+.form-card select {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+}
+
+.form-card button {
+  padding: 0.75rem;
+  background-color: #0f0;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-card button:hover {
+  background-color: #0c0;
+}
+
+footer {
+  margin-top: 4rem;
+  padding: 1rem;
+  background-color: #111;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-title {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .logo {
+    max-width: 60px;
+  }
+
+   .logo-group {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .form-card input,
+  .form-card select,
+  .form-card textarea,
+  .form-card button {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+}
